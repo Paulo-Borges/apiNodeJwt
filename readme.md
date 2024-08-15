@@ -13,7 +13,10 @@
 2- npx prisma init
 3- npm install @prisma/client
 4- npx prisma db push
+5- npx prisma studio ( Pra mostrar o prisma Studio )
 
 # Criptografar Senhas
+1- npm install bcrypt  ( instala o BCRYPT )
+
 # Rotas Públicas ( Cadastro e Login ) e Privadas ( Mostrar Usuários )
 # Token JWT para Autenticação
