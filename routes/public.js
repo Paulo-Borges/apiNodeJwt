@@ -48,12 +48,12 @@ router.post('/login', async (req, res) => {
 // Compara a senha do Banco de Dados 
         const isMatch = await bcrypt.compare(userInfo.password, user.password)
 
-        if(!isMatch) {
+        if (!isMatch) {
             return res.status(400).json({ message: 'Senha inválida'})
         }
 
 // Gerar Token 
-        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1m'})
+        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '7d'})
 
 
         res.status(200).json(token)

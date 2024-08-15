@@ -5,13 +5,13 @@ import { PrismaClient } from '@prisma/client'
 const router = express.Router()
 const prisma = new PrismaClient()
 
-router.get('/Listar-usuarios', async (req, res) => {
+router.get('/listar-usuarios', async (req, res) => {
 
     try {
 
         const users = await prisma.user.findMany()
 
-        res.status(200).json({ message: "Usuários Listados comSucesso", users })
+        res.status(200).json({ message: "Usuários Listados com Sucesso", users })
         
     } catch (error) {
         console.log(error)
