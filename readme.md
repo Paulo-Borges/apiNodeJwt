@@ -23,3 +23,10 @@
 1- npm install jsonwebtoken
 
 ## Rotas Públicas ( Cadastro e Login ) e Privadas ( Mostrar Usuários )
+
+
+
+## Liberar a conexão com o Backend ( CORS )
+
+1- npm install cors ( instalar o cors )
+
